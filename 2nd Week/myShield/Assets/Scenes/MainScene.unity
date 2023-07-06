@@ -1259,6 +1259,7 @@ MonoBehaviour:
   timeText: {fileID: 107781916}
   thisScoreTxt: {fileID: 2032679369}
   maxScoreTxt: {fileID: 653905844}
+  anim: {fileID: 585588835}
 --- !u!4 &706271446
 Transform:
   m_ObjectHideFlags: 0

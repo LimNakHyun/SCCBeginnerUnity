@@ -11,6 +11,7 @@ public class gameManager : MonoBehaviour
     public Text timeText;
     public Text thisScoreTxt;
     public Text maxScoreTxt;
+    public Animator anim;
     float alive = 0f;
     bool isRunning = true;
     public static gameManager I;    // public -> 여러군데에서 호출 가능
@@ -24,6 +25,7 @@ public class gameManager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1f;
+        anim.SetBool("isDie", false);
         InvokeRepeating("makeSquare", 0.0f, 0.5f);
     }
 
@@ -45,7 +47,8 @@ public class gameManager : MonoBehaviour
     public void gameOver()
     {
         isRunning = false;
-        Time.timeScale = 0f;
+        anim.SetBool("isDie", true);
+        Invoke("timeStop", 0.5f);
         endPanel.SetActive(true);
         thisScoreTxt.text = alive.ToString("N2");
         if (PlayerPrefs.HasKey("bestscore") == false)
@@ -62,8 +65,14 @@ public class gameManager : MonoBehaviour
         maxScoreTxt.text = maxScore.ToString("N2");
     }
 
+    void timeStop()
+    {
+        Time.timeScale = 0f;
+    }
+
     public void retry()
     {
         SceneManager.LoadScene("MainScene");
     }
+
 }
