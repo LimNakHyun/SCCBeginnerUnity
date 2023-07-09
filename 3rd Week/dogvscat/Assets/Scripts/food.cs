@@ -13,7 +13,7 @@ public class food : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(0, 0.2f, 0);
+        transform.position += new Vector3(0, 0.15f, 0);
         if (transform.position.y > 26.0f)
         {
             Destroy(gameObject);
