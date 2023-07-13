@@ -980,6 +980,7 @@ MonoBehaviour:
   food: {fileID: 1497685238870397101, guid: daab2518889802642b567985e67db468, type: 3}
   normalCat: {fileID: 6117889565392209094, guid: 617ef63dfdcc30a4a8566c242e01c182, type: 3}
   fatCat: {fileID: 6531249598774806301, guid: 2cd0cd4eb952bc04fa128a1c005d465c, type: 3}
+  pirateCat: {fileID: 5532098295934564096, guid: 7ff200b1ceb387b43a882267bd1cfcd2, type: 3}
   retryBtn: {fileID: 391935522}
   levelText: {fileID: 2092185709}
   levelFront: {fileID: 362475550}

@@ -9,6 +9,7 @@ public class gameManager : MonoBehaviour
     public GameObject food;
     public GameObject normalCat;
     public GameObject fatCat;
+    public GameObject pirateCat;
     public GameObject retryBtn;
     public Text levelText;
     public GameObject levelFront;
@@ -24,7 +25,7 @@ public class gameManager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1.0f;
-        InvokeRepeating("makeFood", 0.0f, 0.5f);
+        InvokeRepeating("makeFood", 0.0f, 0.1f);
         InvokeRepeating("makeCat", 0.0f, 1.0f);
     }
 
@@ -48,11 +49,17 @@ public class gameManager : MonoBehaviour
             float p = Random.Range(0, 10);
             if (p < 5) Instantiate(normalCat);
         }
-        else if (level >= 3)
+        else if (level == 3)
         {
             float p = Random.Range(0, 10);
             if (p < 6) Instantiate(normalCat);
             Instantiate(fatCat);
+        }
+        else if (level >= 5)
+        {
+            float p = Random.Range(0, 10);
+            if (p < 8) Instantiate(normalCat);
+            Instantiate(pirateCat);
         }
     }
 

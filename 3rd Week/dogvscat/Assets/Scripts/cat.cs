@@ -34,6 +34,10 @@ public class cat : MonoBehaviour
             {
                 transform.position += new Vector3(0, -0.012f, 0);
             }
+            else if (type == 2)
+            {
+                transform.position += new Vector3(0, -0.04f, 0);
+            }
             if (transform.position.y < -16.0f)
             {
                 // 게임오버!
