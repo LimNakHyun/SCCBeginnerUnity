@@ -737,9 +737,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1a620000
+      m_SelectedIDs: b8550000
       m_LastClickedID: 0
-      m_ExpandedIDs: 489bffff24f9ffff0efbffff
+      m_ExpandedIDs: 0efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -834,7 +834,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -850,7 +850,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 2c610000
     m_LastClickedID: 24876
-    m_ExpandedIDs: ffffffff00000000ce610000d0610000d2610000d4610000d6610000
+    m_ExpandedIDs: 000000000c6200000e620000106200001262000014620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -876,9 +876,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1a620000
-    m_LastClickedID: 25114
-    m_ExpandedIDs: ffffffff00000000ce610000d0610000d2610000d4610000d6610000
+    m_SelectedIDs: b8550000
+    m_LastClickedID: 21944
+    m_ExpandedIDs: ffffffff000000000c6200000e620000106200001262000014620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -903,8 +903,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 1a620000
-    m_LastClickedInstanceID: 25114
+    m_SelectedInstanceIDs: b8550000
+    m_LastClickedInstanceID: 21944
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
