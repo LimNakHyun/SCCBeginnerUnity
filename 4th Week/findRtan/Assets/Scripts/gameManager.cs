@@ -7,6 +7,7 @@ using System.Linq;
 public class gameManager : MonoBehaviour
 {
     public Text timeTxt;
+    public GameObject endTxt;
     public GameObject card;
     float time;
     public static gameManager I;
@@ -53,6 +54,12 @@ public class gameManager : MonoBehaviour
         {
             firstCard.GetComponent<card>().destroyCard();
             secondCard.GetComponent <card>().destroyCard();
+
+            int cardsLeft = GameObject.Find("cards").transform.childCount;
+            if (cardsLeft == 2)
+            {
+                Invoke("GameEnd", 1.0f);
+            }
         }
         else
         {
@@ -62,5 +69,11 @@ public class gameManager : MonoBehaviour
 
         firstCard = null;
         secondCard = null;
+    }
+
+    void GameEnd()
+    {
+        Time.timeScale = 0.0f;
+        endTxt.SetActive(true);
     }
 }
