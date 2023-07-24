@@ -43,7 +43,7 @@ public class gameManager : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if (time > 3)
+        if (time > 30)
         {
             GameEnd();
         }
