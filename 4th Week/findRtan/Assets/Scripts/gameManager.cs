@@ -36,12 +36,17 @@ public class gameManager : MonoBehaviour
             string rtanName = "rtan" + rtans[i].ToString();
             newCard.transform.Find("front").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(rtanName);
         }
+        Time.timeScale = 1.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
         time += Time.deltaTime;
+        if (time > 3)
+        {
+            GameEnd();
+        }
         timeTxt.text = time.ToString("N2");
     }
 
